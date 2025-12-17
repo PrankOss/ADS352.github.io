@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Emircan | Kişisel Sayfa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #111827;
+            --text: #e5e7eb;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-2: #22c55e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #020617, var(--bg));
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 80px 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            letter-spacing: 1px;
+        }
+
+        header span {
+            color: var(--accent);
+        }
+
+        header p {
+            margin-top: 12px;
+            color: var(--muted);
+            max-width: 600px;
+            margin-inline: auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            color: var(--accent-2);
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 18px;
+        }
+
+        ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px 60px;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        .socials {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: var(--text);
+            padding: 10px 18px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .socials a:hover {
+            background: var(--accent);
+            color: #020617;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Emircan <span>Uçan</span></h1>
+    <p> Bu site ADS352 Açık kaynak yazılım geliştirme dersi için oluşturulmuştur.</p>
+</header>
+
+<section class="container">
+    <div class="card">
+        <h2>Hakkımda</h2>
+        <p>
+Bu siteyi ADS352 Açık kaynak ve yazılım geliştime dersim için oluşturdum :) 
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>İlgi Alanları</h2>
+        <ul>
+            <li>Havacılık & Uçak Sistemleri</li>
+            <li>Spor & Kuvvet Antrenmanı</li>
+            <li>Teknik Gelişim</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Hedefler</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>İletişim</h2>
+        <p>Benimle bağlantıya geçmek için aşağıdaki platformları kullanabilirsiniz.</p>
+        <div class="socials">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">E-posta</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Emircan Uçan · Kişisel Web Sayfası
+</footer>
+
+</body>
+</html>
